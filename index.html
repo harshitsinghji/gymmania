@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYMMANIA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="full-img" id="fullimgbox">
+    <img src="gym1.jpg" alt="" id="fullimg">
+    <span onclick="closefullimg()">X</span>
+</div>
+<div class="img-gallery">
+
+    <img src="gym1.jpg" alt="" height="250px" width="300px" onclick="openfullimg(this.src)">
+    <img src="gym2.jpg" alt="" height="250px" width="300px" onclick="openfullimg(this.src)">
+    <img src="gym3.jpg" alt="" height="250px" width="300px" onclick="openfullimg(this.src)">
+    <img src="gym4.jpg" alt="" height="250px" width="300px" onclick="openfullimg(this.src)">
+    <img src="gym5.jpg" alt="" height="250px" width="300px" onclick="openfullimg(this.src)">
+    <img src="gym6.jpg" alt="" height="250px" width="300px" onclick="openfullimg(this.src)">
+    <img src="gym7.jpg" alt="" height="250px" width="300px" onclick="openfullimg(this.src)">
+    <img src="gym8.jpg" alt="" height="250px" width="300px" onclick="openfullimg(this.src)">
+    
+</div>
+
+<script>
+
+let fullimgbox= document.getElementById("fullimgbox");
+let fullimg= document.getElementById("fullimg");
+
+    function openfullimg(pic){
+    fullimgbox.style.display= "flex";
+    fullimg.src = pic;
+}
+
+const closefullimg=()=>{
+    fullimgbox.style.display="none";
+}
+
+</script>
+
+</body>
+</html>
